@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
       # image: fastapi-image:1.0.3
-    container_name: fastapi_container
+    container_name: fastAPI_container
     ports:
       - 80:80
     volumes:
