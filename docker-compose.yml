@@ -6,15 +6,15 @@ services:
       context: .
       dockerfile: ./Dockerfile
       # image: fastapi-image:1.0.3
-    container_name: fastAPI_container2
+    container_name: fastAPI_container
     ports:
       - 80:80
     volumes:
-      - ./data:/src/app/data/
+      - myvol:/src/app/data/
     command: uvicorn app.main:app --host 0.0.0.0 --port 80
 
-# volumes:
-#   dataset:
+volumes:
+  myvol:
   
       
 
