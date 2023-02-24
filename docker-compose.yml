@@ -10,11 +10,11 @@ services:
     ports:
       - 80:80
     volumes:
-      - dataset:/src/app/data/
+      - ./data:/src/app/data/
     command: uvicorn app.main:app --host 0.0.0.0 --port 80
 
-volumes:
-  dataset:
+# volumes:
+#   dataset:
   
       
 
