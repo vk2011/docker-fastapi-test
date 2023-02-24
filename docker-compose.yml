@@ -3,9 +3,9 @@ version: "3.9"
 services:
   web:
     build: 
-      context: .
+      # context: .
       dockerfile: ./Dockerfile
-      # image: fastAPI_image
+      image: fastAPI_image
     container_name: fastAPI_container
     ports:
       - 80:80
