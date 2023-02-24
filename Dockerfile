@@ -8,4 +8,5 @@ RUN apt-get update
 RUN pip install -r /src/requirements.txt
 COPY ./app /src/app
 
+# command will be added in docker compose
 # CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
