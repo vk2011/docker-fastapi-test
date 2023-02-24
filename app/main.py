@@ -24,7 +24,7 @@ async def user_create(user: UserIn):
         services.add_userdata(user.dict())
     except:
         return {"success": False}
-    return {"added": True}
+    return {"success": True}
 
 
 @app.get("/users", response_model=UserListOut)
